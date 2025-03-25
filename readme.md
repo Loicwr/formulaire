@@ -49,4 +49,12 @@ Chaque champ est accompagné d'un **label** pour améliorer l'accessibilité, et
 
 ---
 
+## 🚀 **Comment l'utiliser**
+
+1. Clonez ce repository sur votre machine locale.
+2. Ouvrez le fichier `index.html` dans votre navigateur.
+3. Remplissez les champs et soumettez le formulaire (notez que l'action de soumission n'est pas encore implémentée — il faudra l'adapter pour traiter les données côté serveur).
+
+---
+
 
