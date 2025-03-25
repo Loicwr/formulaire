@@ -21,24 +21,32 @@
             <ul>
                 <li>
                     <label for="prenom">Prénom :</label>
-                    <input type="text" id="prenom" name="prenom">
+                    <input type="text" id="prenom" name="prenom" required placeholder="Premier prénom uniquement">
                 </li>
                 <li>
                     <label for="nom">Nom :</label>
-                    <input type="text" id="nom" name="nom">
+                    <input type="text" id="nom" name="nom" required placeholder="Nom de famille (comme indiqué sur votre passeport)" size="37">
                 </li>
                 <li>
-                    <label for="age">Age</label>
-                    <input type="number" id="age" name="age" min="1" max="120" required>
+                    <label for="age">Âge :</label>
+                    <input type="number" id="age" name="age" min="1" max="120" required placeholder="Âge">
                 </li>
                 <li>
-                    <label for="sexe">Sexe</label>
-                    <select id="sexe" name="sexe">
+                    <label for="sexe">Sexe :</label>
+                    <select id="sexe" name="sexe" required>
                         <option value="" disabled selected>Selectionner une options</option>
                         <option value="Homme">Homme</option>
                         <option value="Femme">Femme</option>
                         <option value="Autre">Autre</option>
                     </select>
+                </li>
+                <li>
+                    <label for="email">Adresse mail :</label>
+                    <input type="email" id="email" name="user_mail" required>
+                </li>
+                <li>
+                    <label for="adresse">Adresse postal</label>
+                    <input type="text" id="adresse" name="adresse" required >
                 </li>
 
             </ul>
