@@ -1,122 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-
         <meta charset="utf-8" />
-        <title>Mon premier formulaire</title>
-        <style >
-            ul {list-style: none;}
-        </style>
-
+        <title>Formulaire d'inscription</title>
     </head>
-
-
-
     <body>
 
         <h1 style="text-align: center; margin-top: 100px;">Formulaire d'inscription</h1>
 
         <form action="/ma-page-de-traitement" method="post">
-
-            <ul>
-                <li>
-                    <label for="prenom">Prénom :</label>
-                    <input type="text" id="prenom" name="prenom" required placeholder="Premier prénom uniquement">
-                </li>
-                <li>
-                    <label for="nom">Nom :</label>
-                    <input type="text" id="nom" name="nom" required placeholder="Nom de famille (comme indiqué sur votre passeport)" size="37">
-                </li>
-                <li>
-                    <label for="age">Âge :</label>
-                    <input type="number" id="age" name="age" min="1" max="120" required placeholder="Âge">
-                </li>
-                <li>
-                    <label for="sexe">Sexe :</label>
-                    <input type="radio" id="homme" name="sexe" value="Homme" required>
-                    <label for="homme">Homme</label>
-                    <input type="radio" id="femme" name="sexe" value="Femme" required>
-                    <label for="femme">Femme</label>
-                    <input type="radio" id="autre" name="sexe" value="Autre" required>
-                    <label for="autre">Autre</label>
-                </li>
-                <li>
-                    <label for="email">Adresse mail :</label>
-                    <input type="email" id="email" name="user_mail" placeholder="Adresse mail">
-                </li>
-                <li>
-                    <label for="adresse">Adresse postale</label>
-                    <input type="text" id="adresse" name="adresse" required placeholder="Adresse postal">
-                </li>
-                <li>
-                    <label for="postal">Code postal :</label>
-                    <input type="number" id="postal" name="postal" required maxlength="5" placeholder="Votre code postal">
-                </li>
-                <li>
-                    <label for="ville">Ville :</label>
-                    <input type="text" id="ville" name="ville" required placeholder="Votre ville">
-                </li>
-                <li>
-                    <label for="métier">Métier exercé :</label>
-                    <select id="métier" name="métier" required>
-                        <option value="" disabled selected>Métier</option>
-                        <option value="Maçon">Maçon</option>
-                        <option value="Développeur Web">Développeur Web</option>
-                        <option value="Boulanger">Boulanger</option>
-                        <option value="Conducteur de bus">Conducteur de bus</option>
-                        <option value="Banquier">Banquier</option>
-                    </select>
-                </li>
-                <li>
-                    <label for="nationalité">Nationalité :</label>
-                    <select id="nationalité" name="nationalité" required>
-                        <option value="Française" selected>Française</option>
-                        <option value="Belge">Belge</option>
-                        <option value="Espagnol">Espagnol</option>
-                        <option value="Portugais">Portugais</option>
-                        <option value="Suisse">Suisse</option>
-                    </select>
-                </li>
-                <li>
-                    <label for="date-de-naissance">Date de naissance :</label>
-                    <input type="date" id="date-de-naissance" name="date-de-naissance" required>
-                </li>
-                <li>
-                    <label for="pays-de-naissance">Pays de naissance :</label>
-                    <input type="text" id="pays-de-naissance" name="pays-de-naissance" required placeholder="Votre pays de naissance">
-                </li>
-                <li>
-                    <label for="numéro-sécu">Numéro de sécurité sociale :</label>
-                    <input type="text" id="numéro-sécu" name="numéro-sécu" required maxlength="15" pattern="\d{15}" placeholder="Votre numéro de sécurité sociale">
-                </li>
-                <li>
-                    <label for="numéro-passeport">Votre numéro de passeport :</label>
-                    <input type="text" id="numéro-passeport" name="numéro-passeport" required maxlength="9" pattern="[A-Z0-9]{9}" placeholder="Votre numéro de passeport">
-                </li>                
-                <li>
-                    <label for="date-de-délivrance-du-passeport">Date de délivrance du passeport :</label>
-                    <input type="date" id="date-de-délivrance-du-passeport" name="date-de-délivrance-du-passeport" required>
-                </li>
-                <li>
-                    <label for="date-de-validité-du-passeport">Date de validité du passeport :</label>
-                    <input type="date" id="date-de-validité-du-passeport" name="date-de-validité-du-passeport" required>
-                </li>
-                <li>
-                    <button type="submit">S'inscrire</button>
-                </li>
-
-            </ul>
-
+            <table border="1" cellspacing="0" cellpadding="5" align="center">
+                <tr>
+                    <td><label for="prenom">Prénom :</label></td>
+                    <td><input type="text" id="prenom" name="prenom" required placeholder="Premier prénom uniquement" autocomplete="given-name"></td>
+                </tr>
+                <tr>
+                    <td><label for="nom">Nom :</label></td>
+                    <td><input type="text" id="nom" name="nom" required placeholder="Nom de famille" size="37" autocomplete="family-name"></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Âge :</label></td>
+                    <td><input type="number" id="age" name="age" min="1" max="120" required placeholder="Âge"></td>
+                </tr>
+                <tr>
+                    <td>Sexe :</td>
+                    <td>
+                        <input type="radio" id="homme" name="sexe" value="Homme" required>
+                        <label for="homme">Homme</label>
+                        <input type="radio" id="femme" name="sexe" value="Femme" required>
+                        <label for="femme">Femme</label>
+                        <input type="radio" id="autre" name="sexe" value="Autre" required>
+                        <label for="autre">Autre</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Adresse mail :</label></td>
+                    <td><input type="email" id="email" name="user_mail" placeholder="Adresse mail" autocomplete="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="adresse">Adresse postale :</label></td>
+                    <td><input type="text" id="adresse" name="adresse" required placeholder="Adresse postale" autocomplete="street-address"></td>
+                </tr>
+                <tr>
+                    <td><label for="postal">Code postal :</label></td>
+                    <td><input type="text" id="postal" name="postal" required maxlength="5" pattern="\d{5}" placeholder="Votre code postal" autocomplete="postal-code"></td>
+                </tr>
+                <tr>
+                    <td><label for="ville">Ville :</label></td>
+                    <td><input type="text" id="ville" name="ville" required placeholder="Votre ville" autocomplete="address-level2"></td>
+                </tr>
+                <tr>
+                    <td><label for="métier">Métier exercé :</label></td>
+                    <td>
+                        <select id="métier" name="métier" required>
+                            <option value="" disabled selected>Métier</option>
+                            <option value="Maçon">Maçon</option>
+                            <option value="Développeur Web">Développeur Web</option>
+                            <option value="Boulanger">Boulanger</option>
+                            <option value="Conducteur de bus">Conducteur de bus</option>
+                            <option value="Banquier">Banquier</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="nationalité">Nationalité :</label></td>
+                    <td>
+                        <select id="nationalité" name="nationalité" required>
+                            <option value="Française" selected>Française</option>
+                            <option value="Belge">Belge</option>
+                            <option value="Espagnol">Espagnol</option>
+                            <option value="Portugais">Portugais</option>
+                            <option value="Suisse">Suisse</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="date-de-naissance">Date de naissance :</label></td>
+                    <td><input type="date" id="date-de-naissance" name="date-de-naissance" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pays-de-naissance">Pays de naissance :</label></td>
+                    <td><input type="text" id="pays-de-naissance" name="pays-de-naissance" required placeholder="Votre pays de naissance" autocomplete="country"></td>
+                </tr>
+                <tr>
+                    <td><label for="numéro-sécu">Numéro de sécurité sociale :</label></td>
+                    <td><input type="text" id="numéro-sécu" name="numéro-sécu" required maxlength="15" pattern="\d{15}" placeholder="Votre numéro de sécurité sociale"></td>
+                </tr>
+                <tr>
+                    <td><label for="numéro-passeport">Votre numéro de passeport :</label></td>
+                    <td><input type="text" id="numéro-passeport" name="numéro-passeport" required maxlength="9" pattern="[A-Z0-9]{9}" placeholder="Votre numéro de passeport"></td>
+                </tr>
+                <tr>
+                    <td><label for="date-de-délivrance-du-passeport">Date de délivrance du passeport :</label></td>
+                    <td><input type="date" id="date-de-délivrance-du-passeport" name="date-de-délivrance-du-passeport" required></td>
+                </tr>
+                <tr>
+                    <td><label for="date-de-validité-du-passeport">Date de validité du passeport :</label></td>
+                    <td><input type="date" id="date-de-validité-du-passeport" name="date-de-validité-du-passeport" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit">S'inscrire</button>
+                    </td>
+                </tr>
+            </table>
         </form>
 
     </body>
-
-    <footer>
-
-
-
-    </footer>
-
-
-
 </html>
