@@ -42,15 +42,15 @@
                 </li>
                 <li>
                     <label for="email">Adresse mail :</label>
-                    <input type="email" id="email" name="user_mail" required placeholder="Adresse mail">
+                    <input type="email" id="email" name="user_mail" placeholder="Adresse mail">
                 </li>
                 <li>
-                    <label for="adresse">Adresse postal</label>
+                    <label for="adresse">Adresse postale</label>
                     <input type="text" id="adresse" name="adresse" required placeholder="Adresse postal">
                 </li>
                 <li>
                     <label for="postal">Code postal :</label>
-                    <input type="number" id="postal" name="postal" required placeholder="Votre code postal">
+                    <input type="number" id="postal" name="postal" required maxlength="5" placeholder="Votre code postal">
                 </li>
                 <li>
                     <label for="ville">Ville :</label>
@@ -86,12 +86,23 @@
                     <input type="text" id="pays-de-naissance" name="pays-de-naissance" required placeholder="Votre pays de naissance">
                 </li>
                 <li>
-                    <label for="numéro-sécu">Numéro de sécurité social :</label>
-                    <input type="text" id="numéro-sécu" name="numéro-sécu" required placeholder="Votre numéro de sécurité social">
+                    <label for="numéro-sécu">Numéro de sécurité sociale :</label>
+                    <input type="text" id="numéro-sécu" name="numéro-sécu" required maxlength="15" pattern="\d{15}" placeholder="Votre numéro de sécurité sociale">
                 </li>
                 <li>
-                    <label for="numéro-passeport">Vote numéro de passeport :</label>
-                    <input type="text" id="numéro-passeport" name="numéro-passeport" required placeholder="Votre numéro de passeport">
+                    <label for="numéro-passeport">Votre numéro de passeport :</label>
+                    <input type="text" id="numéro-passeport" name="numéro-passeport" required maxlength="9" pattern="[A-Z0-9]{9}" placeholder="Votre numéro de passeport">
+                </li>                
+                <li>
+                    <label for="date-de-délivrance-du-passeport">Date de délivrance du passeport :</label>
+                    <input type="date" id="date-de-délivrance-du-passeport" name="date-de-délivrance-du-passeport" required>
+                </li>
+                <li>
+                    <label for="date-de-validité-du-passeport">Date de validité du passeport :</label>
+                    <input type="date" id="date-de-validité-du-passeport" name="date-de-validité-du-passeport" required>
+                </li>
+                <li>
+                    <button type="submit">S'inscrire</button>
                 </li>
 
             </ul>
