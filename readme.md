@@ -16,3 +16,16 @@ Le formulaire comprend les champs suivants :
 6. **Adresse postale** : Un champ de texte pour saisir l'adresse postale de l'utilisateur.
 7. **Code postal** : Un champ de texte avec une validation de format pour le code postal (5 chiffres).
 8. **Ville** : Un champ de texte pour saisir la ville de l'utilisateur.
+9. **Métier exercé** : Un menu déroulant permettant de sélectionner un métier parmi plusieurs options.
+10. **Nationalité** : Un menu déroulant pour choisir la nationalité.
+11. **Date de naissance** : Un champ de type date pour saisir la date de naissance.
+12. **Pays de naissance** : Un champ de texte pour saisir le pays de naissance.
+13. **Numéro de sécurité sociale** : Un champ de texte avec validation pour le numéro de sécurité sociale (15 chiffres).
+14. **Numéro de passeport** : Un champ de texte avec validation pour le numéro de passeport (9 caractères alphanumériques).
+15. **Date de délivrance du passeport** : Un champ de type date pour saisir la date de délivrance du passeport.
+16. **Date de validité du passeport** : Un champ de type date pour saisir la date de validité du passeport.
+
+Chaque champ est accompagné d'un **label** pour améliorer l'accessibilité, et plusieurs champs sont rendus obligatoires à l'aide de l'attribut `required`.
+
+---
+
