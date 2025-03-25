@@ -33,12 +33,12 @@
                 </li>
                 <li>
                     <label for="sexe">Sexe :</label>
-                    <select id="sexe" name="sexe" required>
-                        <option value="" disabled selected>Selectionner une options</option>
-                        <option value="Homme">Homme</option>
-                        <option value="Femme">Femme</option>
-                        <option value="Autre">Autre</option>
-                    </select>
+                    <input type="radio" id="homme" name="sexe" value="Homme" required>
+                    <label for="homme">Homme</label>
+                    <input type="radio" id="femme" name="sexe" value="Femme" required>
+                    <label for="femme">Femme</label>
+                    <input type="radio" id="autre" name="sexe" value="Autre" required>
+                    <label for="autre">Autre</label>
                 </li>
                 <li>
                     <label for="email">Adresse mail :</label>
@@ -55,6 +55,28 @@
                 <li>
                     <label for="ville">Ville :</label>
                     <input type="text" id="ville" name="ville" required placeholder="Votre ville">
+                </li>
+                <li>
+                    <label for="métier">Métier exercé :</label>
+                    <select id="métier" name="métier" required>
+                        <option value="" disabled selected>Métier</option>
+                        <option value="Maçon">Maçon</option>
+                        <option value="Développeur Web">Développeur Web</option>
+                        <option value="Boulanger">Boulanger</option>
+                        <option value="Conducteur de bus">Conducteur de bus</option>
+                        <option value="Banquier">Banquier</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="nationalité">Nationalité :</label>
+                    <select id="nationalité" name="nationalité" required>
+                        <option value="Française" selected>Française</option>
+                        <option value="Belge">Belge</option>
+                        <option value="Espagnol">Espagnol</option>
+                        <option value="Portugais">Portugais</option>
+                        <option value="Suisse">Suisse</option>
+                    </select>
+
                 </li>
 
             </ul>
