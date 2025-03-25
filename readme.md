@@ -29,3 +29,13 @@ Chaque champ est accompagné d'un **label** pour améliorer l'accessibilité, et
 
 ---
 
+## 💻 **Technologies utilisées**
+
+- **HTML5** : Le formulaire est entièrement construit avec du HTML5.
+- **Balises HTML5** :
+  - Utilisation des champs `type="email"`, `type="number"`, `type="date"`, etc. pour une validation côté client optimale.
+  - Attributs comme `required`, `min`, `max`, `pattern` pour garantir la saisie correcte des informations.
+  - Les balises `label` et les attributs `for` sont utilisés pour garantir l'accessibilité du formulaire.
+
+---
+
