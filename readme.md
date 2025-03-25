@@ -39,3 +39,14 @@ Chaque champ est accompagné d'un **label** pour améliorer l'accessibilité, et
 
 ---
 
+## 🛠️ **Fonctionnalités principales**
+
+- **Validation des champs** : Grâce à des attributs HTML comme `required`, `min`, `max`, `pattern`, les données saisies par l'utilisateur sont validées directement dans le navigateur.
+  
+- **Accessibilité améliorée** : Chaque champ de saisie est correctement étiqueté à l'aide des balises `label`, ce qui permet une meilleure expérience pour les utilisateurs ayant recours à des technologies d'assistance.
+
+- **Structure claire** : Le formulaire est conçu de manière logique, avec des champs bien organisés pour garantir une navigation fluide.
+
+---
+
+
