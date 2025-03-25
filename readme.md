@@ -57,4 +57,13 @@ Chaque champ est accompagné d'un **label** pour améliorer l'accessibilité, et
 
 ---
 
+## 🎨 **Améliorations possibles**
+
+1. **Ajout de CSS** : Bien que l'exercice demande de ne pas inclure de CSS, une amélioration possible serait d'ajouter du style pour rendre le formulaire plus esthétique et agréable à l'œil.
+2. **Ajout de JavaScript** : Pour plus de flexibilité et de validation côté client avancée, il serait intéressant d'ajouter du JavaScript pour gérer des cas plus complexes.
+3. **Accessibilité accrue** : Utiliser des éléments comme `<fieldset>` et `<legend>` pour regrouper les champs logiquement et améliorer l'expérience pour les utilisateurs avec des technologies d'assistance.
+
+---
+
+Merci d'avoir pris le temps de consulter ce projet ! 😊
 
